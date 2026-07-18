@@ -1,10 +1,13 @@
-# voicevue
+# VoiceVue
 
-VoiceVue — AI voice interview platform with Next.js and Drizzle ORM.
+AI **voice interview practice** with Gemini, a polished Next.js UI, and Drizzle ORM + LibSQL storage.
 
 ## Stack
 
-Next.js, Drizzle, TypeScript
+- Next.js (App Router) + TypeScript  
+- Google Gemini (`@google/generative-ai`)  
+- Drizzle ORM + `@libsql/client`  
+- shadcn / Base UI, Tailwind, Zustand  
 
 ## Getting started
 
@@ -12,14 +15,21 @@ Next.js, Drizzle, TypeScript
 git clone https://github.com/ANSHSINGH050404/voicevue.git
 cd voicevue
 npm install
-npm run dev   # or: npm start
+npx drizzle-kit push   # if needed
+npm run dev
 ```
 
-## Repository
+Open [http://localhost:3000](http://localhost:3000).
 
-- **GitHub:** https://github.com/ANSHSINGH050404/voicevue
-- **Author:** [ANSHSINGH050404](https://github.com/ANSHSINGH050404)
+## Scripts
 
-## License
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Dev server |
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run lint` | ESLint |
 
-See repository for license details (or add an MIT license if this is open source).
+## Author
+
+[ANSHSINGH050404](https://github.com/ANSHSINGH050404)
